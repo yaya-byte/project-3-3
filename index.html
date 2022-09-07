@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+    <div class="page">
+
+<h1>
+    Crie Seu Evento!
+</h1>
+
+<p>
+    É uma grande alegria te convidar para a festa de inauguração da nossa nova loja!<br/> Lá,
+     você irá encontrar tudo o que já temos e muito mais!<br/> E aproveite para levar um amigo e
+      ganhar um brinde exclusivo da nossa loja!
+</p>
+
+</div>
+
+</header>
+
+<form id="my-form">
+
+<fieldset>
+
+ <div class="wrapper-field">
+  <legend id="privacidade">Coloque suas Informações</legend>
+
+    <div class="imput-wrapper">
+        <label for="title-text">Titulo do Evento<span>(minimo 8 caracteres)</span></label>
+        <input type="text" id="title-text"
+        required minlength="8"/>
+    </div>
+<div class="imput-wrapper">
+        <label for="link-url">Link do Evento<span>(https://)</span></label>
+        <input type="text" id="link-url"required/>
+    </div>
+
+    <div class="imput-wrapper">
+        <label for="whats-number">Whatsapp<span>(números)</span></label>
+        <input type="text" id="whats-number"/>
+    </div>
+    <div class="imput-wrapper">
+        <label for="info-text">Informações Extras</label>
+        <textarea id="info-text" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="imput-wrapper">
+        <label for="info-text">Categoria</label>
+        <select id="category-event">
+            <option value="podcast">Pod Cast</option>
+            <option value="live">Live Ao-Vivo</option>
+            <option value="videos">Videos</option>
+            <option value="music">Musica</option> 
+        </select>
+    </div>
+ </div>
+
+</fieldset>
+
+<fieldset>
+
+    <div class="wrapper-field">
+     <legend id="privacidade">Privacidade</legend>
+
+     <div class="imput-wrapper">
+        <label for="whats-number">Email<span>(exemplo@gmail.com)</span></label>
+        <input type="text" id="whats-number"required/>
+    </div>
+
+    <div class="imput-wrapper">
+        <label for="whats-number">Senha<span>(digite uma senha válida)</span></label>
+        <input type="password" id="whats-number"required minlength="8"/>
+    </div>
+
+    <div class="checkbox-wrapper">
+        <input type="checkbox" id="private-number"/>
+        <label for="private-number">Evento privado</label>
+    </div>
+</fieldset>
+
+<fieldset>
+
+<div class="wrapper-field">
+    <legend id="data">Dia e Hora</legend>
+    <div class="col">
+     <div class="imput-wrapper">
+       <label for="date-number">Data</label>
+       <input type="date" id="date-number"required/>
+     </div>
+
+     <div class="imput-wrapper">
+       <label for="hour-number">Das</label>
+       <input type="time" id="hour-number"required/>
+     </div> 
+<div class="imput-wrapper">
+     <label for="until-number">Até</label>
+     <input type="time" id="until-number"required/>
+    </div>
+</div>
+ 
+
+</fieldset>
+</form>
+
+<footer>
+    <input 
+    class="button" 
+    type="submit" 
+    form="my-form"
+    value="Salvar seu Evento">
+
+</footer>
+
+</body>
+</html>

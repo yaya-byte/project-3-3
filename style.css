@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    
+    }
+    
+    header{
+        margin-top: 10px;
+    }
+    
+    
+    
+    .page{
+        width: 766px;
+        margin: auto;
+        padding: 2px;
+    }
+    
+    .wrapper-field{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+    
+    
+    body{
+        font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    width: 1000px;
+    margin: auto;
+    
+    
+    
+    }
+    
+    header h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 40px;
+    
+    }
+    
+    
+    body::before{
+    content: '';
+    width: 1950px;
+    height: 500px;
+    z-index: -1;
+    position:absolute;
+    background-color: black;
+    top: 0%;
+    left: 0%; 
+    }
+    
+    body p{
+    color: lightblue;
+    text-align: center;
+    }
+    
+    form{
+    
+    background-color: aliceblue;
+    margin-top: 40px;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 64px;
+    }
+    
+    fieldset{
+    border: none;
+    }
+    
+    fieldset legend{
+    
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 1px solid ;
+    
+    }
+    
+    span{
+    
+    color:grey;
+    margin-left: 8px;
+    }
+    
+    .imput-wrapper{
+    display: flex;
+    flex-direction:column;
+    }
+    
+    label{
+    margin-bottom: 8px;
+    }
+    input{
+        height: 50px;
+        border: 1px black solid;
+        border-radius: 5px;
+        padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    
+    }
+    
+    textarea, select{
+        border: 1px black solid;
+        border-radius: 5px;
+        padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #privacidade, #data{ 
+    font-size: 32px;
+    }
+    
+    .col{
+        display: flex;
+        gap: 20px;
+    }
+    
+    
+    .checkbox-wrapper input{
+    display: none;
+    }
+    
+    .checkbox-wrapper label{
+        display:flex;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    .checkbox-wrapper label::before{
+    
+    content:"";
+    height: 20px;
+    width: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    display: block;
+    }
+    
+    .checkbox-wrapper input:checked + label::before {
+        background-color:blueviolet
+    }
+    
+    footer{
+        background-color: lightgray;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 60px;
+        align-items: center ;
+        border-radius: 5px;
+    }
+    .button{
+    
+        height: 200px;
+        width: 600px;
+        background-color: lightgreen;
+        border-radius: 8px;
+        border-color: rgb(115, 112, 112);
+        padding: 8px;
+    
+    }
+    input:invalid{
+    
+    border: solid 2px red;
+    }
